@@ -1,1 +1,53 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Moon Suga Cookies & More</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+  <source src="assets/cookie-song.mp3" type="audio/mpeg">
+</audio>
+
+<header>
+  <img src="assets/logo.png" class="logo">
+  <h1>Moon Suga Cookies & More</h1>
+  <p>Fresh • Sweet • Made with Love</p>
+</header>
+
+<div class="moon-oven" id="oven">
+  🌙 Oven Status: <span id="status">OFF</span>
+</div>
+
+<section class="menu">
+
+  <div class="cookie-card">
+    <h2>Chocolate Chip Dream</h2>
+    <p>🍫 Ingredients: Flour, Sugar, Chocolate Chips, Butter, Eggs</p>
+    <button onclick="order()">Order</button>
+  </div>
+
+  <div class="cookie-card">
+    <h2>Sugar Sprinkle Bliss</h2>
+    <p>🍭 Ingredients: Sugar, Vanilla, Butter, Flour, Sprinkles</p>
+    <button onclick="order()">Order</button>
+  </div>
+
+  <div class="cookie-card">
+    <h2>Peanut Butter Magic</h2>
+    <p>🥜 Ingredients: Peanut Butter, Sugar, Eggs, Vanilla</p>
+    <button onclick="order()">Order</button>
+  </div>
+
+</section>
+
+<div class="floating-cookies">
+  🍪 🍪 🍪 🍪 🍪
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
