@@ -1,1 +1,74 @@
 
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  background: url('assets/wallpaper.jpg') no-repeat center/cover;
+  color: #5a3d2b;
+}
+
+header {
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { filter: drop-shadow(0 0 5px gold); }
+  to { filter: drop-shadow(0 0 20px pink); }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cookie-card {
+  background: #fff8f2;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.cookie-card:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background: #ff8fa3;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4d6d;
+}
+
+.moon-oven {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.floating-cookies {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  font-size: 30px;
+  animation: float 5s infinite linear;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
